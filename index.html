@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="生成AI関連情報のデータベースビューア。カテゴリ・タグによる分類と検索機能を提供。"
+    />
+    <title>AI Database Viewer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <div class="logo">
+            <span class="logo-icon">◆</span>
+            <h1>AI Database</h1>
+          </div>
+          <button
+            class="sidebar-close"
+            id="sidebarClose"
+            aria-label="サイドバーを閉じる"
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">カテゴリ</h2>
+          <nav class="category-tree" id="categoryTree">
+            <button class="category-item active" data-category="all">
+              <span class="cat-icon">⊞</span>
+              <span class="cat-label">すべて</span>
+              <span class="cat-count" id="countAll">0</span>
+            </button>
+            <button class="category-item" data-category="A">
+              <span class="cat-icon cat-a">A</span>
+              <span class="cat-label">生成モデル・システム</span>
+              <span class="cat-count" id="countA">0</span>
+            </button>
+            <button class="category-item" data-category="B">
+              <span class="cat-icon cat-b">B</span>
+              <span class="cat-label">研究・論文</span>
+              <span class="cat-count" id="countB">0</span>
+            </button>
+            <button class="category-item" data-category="C">
+              <span class="cat-icon cat-c">C</span>
+              <span class="cat-label">出版・ドキュメント</span>
+              <span class="cat-count" id="countC">0</span>
+            </button>
+            <button class="category-item" data-category="D">
+              <span class="cat-icon cat-d">D</span>
+              <span class="cat-label">表現・応用芸術</span>
+              <span class="cat-count" id="countD">0</span>
+            </button>
+            <button class="category-item" data-category="E">
+              <span class="cat-icon cat-e">E</span>
+              <span class="cat-label">法規制・ガバナンス</span>
+              <span class="cat-count" id="countE">0</span>
+            </button>
+            <button class="category-item" data-category="F">
+              <span class="cat-icon cat-f">F</span>
+              <span class="cat-label">社会実装・メディア</span>
+              <span class="cat-count" id="countF">0</span>
+            </button>
+          </nav>
+        </div>
+
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">アクティブタグ</h2>
+          <div class="active-tags" id="activeTags">
+            <p class="no-tags">タグ未選択</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main">
+        <!-- Header -->
+        <header class="header">
+          <button class="menu-btn" id="menuBtn" aria-label="メニューを開く">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="search-container">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              class="search-input"
+              id="searchInput"
+              placeholder="記事を検索..."
+              aria-label="記事を検索"
+            />
+            <button
+              class="search-clear"
+              id="searchClear"
+              aria-label="検索をクリア"
+            >
+              ✕
+            </button>
+          </div>
+          <div class="header-stats">
+            <div class="stat">
+              <span class="stat-value" id="statTotal">0</span>
+              <span class="stat-label">総記事数</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value" id="statFiltered">0</span>
+              <span class="stat-label">表示中</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Content Area -->
+        <div class="content" id="content">
+          <!-- Card Grid (default view) -->
+          <div class="card-grid" id="cardGrid"></div>
+
+          <!-- Article Detail (hidden by default) -->
+          <div class="article-detail hidden" id="articleDetail">
+            <button class="back-btn" id="backBtn">
+              <span>←</span> 一覧に戻る
+            </button>
+            <article class="detail-content" id="detailContent"></article>
+          </div>
+
+          <!-- Empty State -->
+          <div class="empty-state hidden" id="emptyState">
+            <div class="empty-icon">📭</div>
+            <h3>該当する記事がありません</h3>
+            <p>検索条件またはフィルターを変更してください。</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="overlay hidden" id="overlay"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

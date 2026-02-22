@@ -1,0 +1,211 @@
+[
+  {
+    "id": "A002",
+    "title": "Google Gemini 2.0 Flash: エージェント時代に向けた高速マルチモーダルAI",
+    "summary": "Googleが2024年12月に発表したGemini 2.0 Flashは、100万トークンのコンテキストウィンドウとネイティブなツール呼び出し機能を備えた高速マルチモーダルモデルである。",
+    "body": "<p>Googleは2024年12月11日、次世代AIモデルファミリー「Gemini 2.0」の最初のモデルとして「Gemini 2.0 Flash」を発表した。2025年1月30日にはデフォルトモデルとして正式リリースされ、同年2月5日にGoogle AI StudioおよびVertex AIのGemini APIを通じて一般提供が開始された。</p><h3>主な特徴</h3><ul><li><strong>高速パフォーマンス</strong>: Gemini 1.5 Proと比較して主要ベンチマークにおいて約2倍の処理速度を実現。Time to First Token（最初のトークン生成までの時間）も大幅に短縮されている。</li><li><strong>マルチモーダル入出力</strong>: テキスト、画像、動画、音声の入力に対応するほか、出力面でもテキストと画像のネイティブ生成、複数言語でのテキスト読み上げ（TTS）をサポート。</li><li><strong>エージェント機能</strong>: Google検索、コード実行、サードパーティ関数呼び出しなどのツールをネイティブに統合。複雑な指示の理解とマルチステップのタスク実行が可能。</li><li><strong>コンテキストウィンドウ</strong>: 最大1,048,576トークン（約100万トークン）の入力コンテキストをサポートし、大規模な文書処理に対応。</li></ul><h3>技術的詳細</h3><p>Gemini 2.0 Flashは、コスト効率を重視した軽量バリアント「Gemini 2.0 Flash-Lite」も同時に提供されている。また、推論過程を可視化する「Gemini 2.0 Flash Thinking Experimental」モデルも実験版として公開され、モデルの思考プロセスを確認しながら利用できる。</p><p>Multimodal Live APIが新たに導入され、リアルタイムの音声・映像ストリーミング入力による対話型アプリケーションの構築が可能になった。</p><h3>提供形態と価格</h3><p>Gemini APIを通じて開発者向けに提供され、入力タイプごとに統一された料金体系が採用されている。Google AI Studio（無料枠あり）およびVertex AI（従量課金）の両方から利用可能。</p>",
+    "links": [
+      "https://blog.google/technology/google-deepmind/gemini-model-updates-february-2025/",
+      "https://ai.google.dev/gemini-api/docs/models#gemini-2.0-flash"
+    ],
+    "category": "A",
+    "categoryName": "生成モデル・システム",
+    "subcategory": "A-4",
+    "subcategoryName": "マルチモーダル・統合",
+    "tags": [
+      { "type": "Org", "value": "Google" },
+      { "type": "Tech", "value": "Agentic" },
+      { "type": "Tech", "value": "Long Context" },
+      { "type": "Tech", "value": "Proprietary" },
+      { "type": "Tech", "value": "API" },
+      { "type": "Domain", "value": "CS" },
+      { "type": "Status", "value": "2024年" }
+    ],
+    "releaseDate": "2024-12-11",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "A003",
+    "title": "Anthropic Claude 3.5 Sonnet: 高性能と低コストを両立した中位モデル",
+    "summary": "Anthropicが2024年6月に発表したClaude 3.5 Sonnetは、上位モデルClaude 3 Opusを多くのベンチマークで上回りながら、2倍の処理速度と低コストを実現した言語モデルである。",
+    "body": "<p>Anthropicは2024年6月21日、Claude 3モデルファミリーの次世代中位モデル「Claude 3.5 Sonnet」を発表した。同モデルは上位モデルであるClaude 3 Opusを複数の主要ベンチマークで上回る性能を達成しつつ、処理速度は2倍、コストは大幅に抑えたモデルとして位置づけられている。</p><h3>ベンチマーク性能</h3><table><thead><tr><th>ベンチマーク</th><th>Claude 3.5 Sonnet</th><th>Claude 3 Opus</th><th>GPT-4o</th></tr></thead><tbody><tr><td>MMLU（学部レベル知識）</td><td>88.7%</td><td>86.8%</td><td>88.7%</td></tr><tr><td>GPQA（大学院レベル推論）</td><td>59.4%</td><td>50.4%</td><td>53.6%</td></tr><tr><td>HumanEval（コーディング）</td><td>92.0%</td><td>84.9%</td><td>90.2%</td></tr><tr><td>MATH（数学推論）</td><td>71.1%</td><td>60.1%</td><td>76.6%</td></tr><tr><td>MGSM（多言語数学）</td><td>91.6%</td><td>90.7%</td><td>90.5%</td></tr></tbody></table><h3>主な特徴</h3><ul><li><strong>コーディング能力</strong>: 内部のエージェント型コーディング評価において、問題の64%を解決。Claude 3 Opusの38%を大幅に上回る。SWE-bench Verifiedにおいても49%のスコアを達成。</li><li><strong>ビジョン能力</strong>: Anthropicの中で最も優れた視覚理解モデルとして、チャートやグラフの解釈、不鮮明な画像からのテキスト抽出などに対応。小売、物流、金融サービスなどの業界で活用が期待される。</li><li><strong>コンテキストウィンドウ</strong>: 200Kトークンの入力コンテキストに対応し、大規模な文書の一括処理が可能。</li><li><strong>ニュアンス理解</strong>: ユーモア、複雑な指示、自然なトーンの出力において、従来モデルを上回る理解力を実現。</li></ul><h3>提供形態</h3><p>Claude.aiおよびClaude iOSアプリで無料利用可能（レート制限あり）。Claude ProおよびTeamプランでは利用上限が拡大される。開発者向けにはAnthropic API、Amazon Bedrock、Google CloudのVertex AIを通じて提供され、料金は入力100万トークンあたり$3、出力100万トークンあたり$15に設定されている。</p><p>また、Claude.ai上では新機能「Artifacts」が同時に導入され、Claudeが生成したコンテンツをリアルタイムで表示・編集・拡張することが可能になった。</p>",
+    "links": [
+      "https://www.anthropic.com/news/claude-3-5-sonnet",
+      "https://docs.anthropic.com/en/docs/about-claude/models"
+    ],
+    "category": "A",
+    "categoryName": "生成モデル・システム",
+    "subcategory": "A-1",
+    "subcategoryName": "テキスト/LLM",
+    "tags": [
+      { "type": "Org", "value": "Anthropic" },
+      { "type": "Tech", "value": "SOTA" },
+      { "type": "Tech", "value": "Proprietary" },
+      { "type": "Tech", "value": "API" },
+      { "type": "Domain", "value": "CS" },
+      { "type": "Status", "value": "2024年" }
+    ],
+    "releaseDate": "2024-06-21",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "B001",
+    "title": "Mamba: 線形時間推論を実現する選択的状態空間モデルの研究",
+    "summary": "Transformerの二次関数の計算コスト課題を解決するため、入力依存の選択メカニズムを導入した状態空間モデル（SSM）「Mamba」を提案。長文コンテキストにおいて高い効率性と性能を両立した。",
+    "body": "<h3>研究の背景</h3><p>従来のTransformerアーキテクチャは、系列長に対して計算量が二次のオーダーで増加するため、非常に長いコンテキストの処理が困難という課題がありました。本研究では、このスケーラビリティの限界を突破する新しいアーキテクチャ「Mamba」を提示しています。</p><h3>技術的特徴</h3><p>Mambaは、構造化状態空間モデル（SSM）に「選択メカニズム」を導入したことが最大の特徴です。主なポイントは以下の通りです：</p><ul><li><strong>選択的SSM:</strong> 入力に応じて情報を保持・忘却する能力を持たせ、関連性の高い情報に焦点を当てる。</li><li><strong>ハードウェア最適化:</strong> GPUフレンドリーなスキャン操作の実装により、従来のSSMよりも高速な計算を実現。</li><li><strong>線形スケーリング:</strong> 系列長に対して計算量が線形に増加するため、100万トークンを超える超長文の処理が可能。</li></ul><h3>研究の意義</h3><p>言語モデルだけでなく、オーディオやゲノミクスなど、長大なシーケンスデータを扱うあらゆる分野での応用が期待されています。ベンチマークでは、同規模のTransformerモデルを上回る性能をより少ない計算コストで達成しています。</p>",
+    "links": ["https://arxiv.org/abs/2312.00752"],
+    "category": "B",
+    "categoryName": "研究・論文",
+    "subcategory": "B-1",
+    "subcategoryName": "基本原理・アーキテクチャ",
+    "tags": [
+      { "type": "Org", "value": "Carnegie Mellon University" },
+      { "type": "Tech", "value": "State Space Model" },
+      { "type": "Tech", "value": "Long Context" },
+      { "type": "Domain", "value": "CS" },
+      { "type": "Status", "value": "2023年" }
+    ],
+    "releaseDate": "2023-12-01",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "B002",
+    "title": "Direct Preference Optimization (DPO): 強化学習を用いない言語モデルのアライメント",
+    "summary": "複雑なRLHF（人間からのフィードバックによる強化学習）を介さず、単純なバイナリクロスエントロピー損失を用いて言語モデルを人間の好みに最適化する手法を開発。学習の安定性と効率を大幅に向上させた。",
+    "body": "<h3>概要</h3><p>大規模言語モデル（LLM）を人間の意図に沿わせる「アライメント」において、従来のRLHFは報酬モデルの学習とPPOアルゴリズムによる最適化という複雑な工程が必要でした。本研究が提案するDPOは、このプロセスを劇的に簡略化します。</p><h3>DPOのメカニズム</h3><p>DPOは、報酬関数と最適方策の間の数学的関係を利用し、直接方策を最適化します。</p><ul><li><strong>報酬モデルの排除:</strong> 報酬モデルを別途学習・維持する必要がなく、計算リソースを節約。</li><li><strong>数式の簡略化:</strong> 好ましい回答と好ましくない回答のペアを用いて、直接対数尤度を最大化する損失関数を定義。</li><li><strong>安定した学習:</strong> ハイパーパラメータへの感度が低く、RLHFで頻発した学習の不安定さを解消。</li></ul><h3>結果と影響</h3><p>実験の結果、DPOはRLHFと同等以上の性能を示し、LlamaやMistralといった主要なオープンウェイトモデルのファインチューニングに広く採用される標準的な技術となりました。</p>",
+    "links": ["https://arxiv.org/abs/2305.18290"],
+    "category": "B",
+    "categoryName": "研究・論文",
+    "subcategory": "B-2",
+    "subcategoryName": "学習・最適化",
+    "tags": [
+      { "type": "Org", "value": "Stanford University" },
+      { "type": "Tech", "value": "DPO" },
+      { "type": "Tech", "value": "Open-Weights" },
+      { "type": "Topic", "value": "透明性" },
+      { "type": "Status", "value": "2023年" }
+    ],
+    "releaseDate": "2023-05-29",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "B003",
+    "title": "Constitutional AI: AIのフィードバックによる無害性と有用性の両立",
+    "summary": "人間による大量のラベル付けに頼らず、AI自身に「憲法（ルール）」を遵守させることで、安全で役立つモデルを構築する手法。RLAIF（AIフィードバックによる強化学習）の先駆けとなった研究。",
+    "body": "<h3>研究の目的</h3><p>AIモデルをより安全（Harmless）かつ有用（Helpful）にするためには、膨大な人間によるフィードバックが必要でした。本研究では、人間が数個の基本原則（憲法）を与えるだけで、AIが自律的に自身の挙動を修正する手法を提案しました。</p><h3>プロセスの詳細</h3><p>Constitutional AIは大きく分けて2つのフェーズで構成されます：</p><ol><li><strong>教師あり学習フェーズ:</strong> モデルが生成した回答を、AI自身が憲法に照らして批評し、修正版を作成。その修正データで再学習を行う。</li><li><strong>強化学習フェーズ:</strong> 人間の代わりにAIが報酬モデルの役割を果たし、モデルの出力をランク付けして最適化（RLAIF）。</li></ol><h3>成果</h3><p>この手法により、人間が直接すべての有害なケースを教え込むことなく、複雑な倫理的判断やバイアスの抑制が可能になりました。Anthropic社のClaudeシリーズの安全性の基盤となっています。</p>",
+    "links": ["https://arxiv.org/abs/2212.08073"],
+    "category": "B",
+    "categoryName": "研究・論文",
+    "subcategory": "B-3",
+    "subcategoryName": "評価・安全性",
+    "tags": [
+      { "type": "Org", "value": "Anthropic" },
+      { "type": "Tech", "value": "RLAIF" },
+      { "type": "Topic", "value": "AIガバナンス" },
+      { "type": "Topic", "value": "バイアス" },
+      { "type": "Status", "value": "2022年" }
+    ],
+    "releaseDate": "2022-12-15",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "A002",
+    "title": "GPT-3.5：対話型AI「ChatGPT」の普及を支えた基盤モデル",
+    "summary": "2022年11月のChatGPT公開時に採用されたモデル。InstructGPTの流れを汲み、人間の指示に対して自然な対話形式で回答する能力を世界に広めた。",
+    "body": "<h3>概要</h3><p>GPT-3.5は、OpenAIが開発したGPT-3（175Bパラメータ）をベースに、人間のフィードバックによる強化学習（RLHF）を用いて微調整されたモデルです。ChatGPTの初期モデルとして、AIとの対話体験を一般化させました。</p><h3>主な特徴</h3><ul><li><strong>対話への最適化:</strong> 単なるテキスト補完ではなく、質問への回答や指示の遂行に特化。</li><li><strong>gpt-3.5-turbo:</strong> 2023年3月にAPI公開。従来のGPT-3.5モデルより10倍安価かつ高速な推論を実現。</li><li><strong>幅広い汎用性:</strong> プログラミング、文章要約、クリエイティブライティングなど多岐にわたるタスクに対応。</li></ul><h3>技術的意義</h3><p>RLHFにより、AIの回答を人間の意図に沿わせる「アライメント」の有効性を証明した記念碑的なモデルです。</p>",
+    "links": ["https://openai.com/index/chatgpt/"],
+    "category": "A",
+    "categoryName": "生成モデル・システム",
+    "subcategory": "A-1",
+    "subcategoryName": "テキスト/LLM",
+    "tags": [
+      { "type": "Org", "value": "OpenAI" },
+      { "type": "Tech", "value": "LLM" },
+      { "type": "Tech", "value": "API" },
+      { "type": "Domain", "value": "CS" },
+      { "type": "Status", "value": "2022年" }
+    ],
+    "releaseDate": "2022-11-30",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "A003",
+    "title": "GPT-4 / GPT-4 Turbo：高度な推論と信頼性を備えたフラグシップモデル",
+    "summary": "2023年にリリースされた大規模言語モデル。司法試験上位10%のスコアを記録するなど、人間レベルの推論能力とマルチモーダル入力を実現した。",
+    "body": "<h3>概要</h3><p>GPT-4は、GPT-3.5を大幅に上回る性能を持つ次世代モデルです。推論、創造性、視覚情報の理解（GPT-4V）において、当時のSOTA（State-of-the-Art）を記録しました。</p><h3>主な進化点</h3><ul><li><strong>高い推論精度:</strong> 複雑な論理パズルや専門的な学術試験において、前世代を圧倒。</li><li><strong>GPT-4 Turbo:</strong> 128kトークンのコンテキストウィンドウに対応し、2023年4月までの知識を学習済み。</li><li><strong>マルチモーダル機能:</strong> 画像を入力として受け取り、その内容を詳細に解説・分析することが可能。</li></ul><h3>ビジネス利用の拡大</h3><p>高い安全性と低いハルシネーション（もっともらしい嘘）率により、企業の業務効率化やプログラミング支援の標準ツールとなりました。</p>",
+    "links": ["https://openai.com/index/gpt-4/"],
+    "category": "A",
+    "categoryName": "生成モデル・システム",
+    "subcategory": "A-1",
+    "subcategoryName": "テキスト/LLM",
+    "tags": [
+      { "type": "Org", "value": "OpenAI" },
+      { "type": "Tech", "value": "SOTA" },
+      { "type": "Tech", "value": "Long Context" },
+      { "type": "Tech", "value": "Proprietary" },
+      { "type": "Status", "value": "2023年" }
+    ],
+    "releaseDate": "2023-03-14",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "A004",
+    "title": "GPT-4o (Omni)：音声・視覚・テキストのリアルタイム統合モデル",
+    "summary": "2024年5月に発表された「オムニ」モデル。全ての入出力を同一のニューラルネットワークで処理し、人間と同等の応答速度と感情豊かな音声対話を実現。",
+    "body": "<h3>技術革新</h3><p>GPT-4oは、テキスト、画像、音声を統合的に処理するネイティブ・マルチモーダルモデルです。従来のモデルでは複数のモデルを介していたため発生していた遅延を、エンドツーエンドの処理により解消しました。</p><h3>主な特徴</h3><ul><li><strong>リアルタイム応答:</strong> 平均320ミリ秒の応答速度を実現し、自然な会話が可能。</li><li><strong>デスクトップ・アプリ展開:</strong> 画面共有を通じたリアルタイムなコード解説や数学の指導に対応。</li><li><strong>効率化と無料化:</strong> 高い性能を維持しつつコストを削減し、無料ユーザーへも広く開放された。</li></ul><h3>利用シーン</h3><p>感情を込めた読み上げや歌唱、ライブ翻訳など、従来のLLMの枠を超えた「AIアシスタント」としての役割を強化しました。</p>",
+    "links": ["https://openai.com/index/hello-gpt-4o/"],
+    "category": "A",
+    "categoryName": "生成モデル・システム",
+    "subcategory": "A-4",
+    "subcategoryName": "マルチモーダル・統合",
+    "tags": [
+      { "type": "Org", "value": "OpenAI" },
+      { "type": "Tech", "value": "API" },
+      { "type": "Tech", "value": "Zero-shot" },
+      { "type": "Domain", "value": "CS" },
+      { "type": "Status", "value": "2024年" }
+    ],
+    "releaseDate": "2024-05-13",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "A005",
+    "title": "OpenAI o1：論理的思考に特化した推論モデルの誕生",
+    "summary": "「思考の連鎖（Chain of Thought）」をモデル内部で自律的に行う推論特化型モデル。STEM分野や高度なプログラミングにおいて飛躍的な性能向上を達成。",
+    "body": "<h3>概要</h3><p>o1（オー・ワン）は、回答を生成する前に「考える」ステップを設けることで、複雑な問題を解決するために設計された新しいシリーズです。強化学習を通じて、自分の思考プロセスを修正し改善する能力を備えています。</p><h3>推論能力のブレイクスルー</h3><ul><li><strong>数学・科学:</strong> 国際数学オリンピックの予選レベルの問題で高い正答率を記録。</li><li><strong>高度なコード生成:</strong> 複雑なアルゴリズムの実装において、従来のGPT-4oを大きく凌駕。</li><li><strong>自己修正:</strong> 思考の過程で誤りに気づき、別のアプローチを試みる挙動を確認。</li></ul><h3>o1-preview と o1-mini</h3><p>推論能力を最大限に高めたpreview版と、高速かつ軽量で開発者に適したmini版の2種類が初期にリリースされました。</p>",
+    "links": ["https://openai.com/index/introducing-openai-o1-preview/"],
+    "category": "A",
+    "categoryName": "生成モデル・システム",
+    "subcategory": "A-1",
+    "subcategoryName": "テキスト/LLM",
+    "tags": [
+      { "type": "Org", "value": "OpenAI" },
+      { "type": "Tech", "value": "Reasoning" },
+      { "type": "Tech", "value": "Agentic" },
+      { "type": "Domain", "value": "物理" },
+      { "type": "Status", "value": "2024年" }
+    ],
+    "releaseDate": "2024-09-12",
+    "lastVerified": "2026-02-22"
+  },
+  {
+    "id": "A006",
+    "title": "GPT-5：高度な自律性と永続的な学習を実現した次世代モデル",
+    "summary": "2025年後半から2026年にかけて展開された最新モデル。AIエージェントとしての自律性を高め、ユーザー固有のコンテキストを長期的に記憶する機能を搭載。",
+    "body": "<h3>モデルの進化</h3><p>GPT-5シリーズは、単なるテキスト生成を超えた「自律的な問題解決者」への進化を遂げました。高度な推論エンジンと、膨大な知識ベースを効率的に活用する能力を併せ持っています。</p><h3>主要な革新点</h3><ul><li><strong>永続的パーソナライゼーション:</strong> ユーザーとの過去の対話を長期的に記憶し、文脈に合わせた最適なサポートを提供。</li><li><strong>エージェント機能の統合:</strong> ウェブ検索、コード実行、アプリ操作を自律的に組み合わせたタスク遂行。</li><li><strong>信頼性の向上:</strong> 事実確認能力（ファクトチェック）の強化により、ハルシネーションを極限まで低減。</li></ul><h3>展望</h3><p>GPT-5.2などのマイナーアップデートを通じ、製造業や医療、法務といった高度な専門知識が求められるドメインでの実用化が加速しています。</p>",
+    "links": ["https://openai.com/news/"],
+    "category": "A",
+    "categoryName": "生成モデル・システム",
+    "subcategory": "A-1",
+    "subcategoryName": "テキスト/LLM",
+    "tags": [
+      { "type": "Org", "value": "OpenAI" },
+      { "type": "Tech", "value": "SOTA" },
+      { "type": "Tech", "value": "Agentic" },
+      { "type": "Domain", "value": "CS" },
+      { "type": "Status", "value": "2026年" }
+    ],
+    "releaseDate": "2025",
+    "lastVerified": "2026-02-22"
+  }
+]
