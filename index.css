@@ -776,6 +776,8 @@ body::before {
 @media (max-width: 768px) {
   .sidebar {
     transform: translateX(-100%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   .sidebar.open {
     transform: translateX(0);
@@ -792,6 +794,9 @@ body::before {
   .header {
     padding: 0 16px;
     gap: 12px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--bg-secondary);
   }
   .content {
     padding: 16px;
@@ -799,11 +804,37 @@ body::before {
   .card-grid {
     grid-template-columns: 1fr;
   }
+  .article-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--bg-secondary);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .article-card:hover {
+    transform: none;
+  }
   .detail-content {
     padding: 20px;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--bg-secondary);
   }
   .detail-title {
     font-size: 1.3rem;
+  }
+  .category-item,
+  .cat-icon,
+  .cat-label,
+  .cat-count {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+  .overlay {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(0, 0, 0, 0.6);
   }
   .overlay.visible {
     display: block;
