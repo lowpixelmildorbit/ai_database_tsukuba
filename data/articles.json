@@ -415,5 +415,43 @@
     ],
     "releaseDate": "2026-01-30",
     "lastVerified": "2026-03-03"
+  },
+  {
+    "id": "A008",
+    "title": "GPT-1 / GPT-2 / GPT-3：大規模言語モデルの黎明期を切り拓いたOpenAIの初期モデル群",
+    "summary": "2018年から2020年にかけて発表された初期のGPTモデル。パラメータ規模を1750億（GPT-3）まで拡大し、「スケーリング則」と「Few-shot学習」の強力な有効性を証明した。",
+    "body": "<h3>概要</h3><p>OpenAIが開発した初期のGenerative Pre-trained Transformer（GPT）シリーズは、自己教師あり事前学習の有効性を証明し、全世界に大規模言語モデルの可能性を示しました。</p><h3>モデルの進化</h3><ul><li><strong>GPT-1（2018年6月）:</strong> 1億1700万パラメータ。事前学習とファインチューニングを組み合わせる手法を確立。</li><li><strong>GPT-2（2019年2月）:</strong> 15億パラメータ。ゼロショット学習の可能性を提示。あまりに自然な文章生成能力を持っていたため、悪用を懸念して段階的なリリースが行われました。</li><li><strong>GPT-3（2020年5月）:</strong> 1750億パラメータ。パラメータ数が劇的に増加し、「In-context learning」のブレイクスルーを実現。少数のレイアウトや例示（Few-shot）だけで多岐にわたるタスクをこなす汎用性を見せました。</li></ul><h3>歴史的意義</h3><p>この初期シリーズは、モデルの規模（パラメータ数と計算量）を拡大することによって性能が予測可能に向上するという「スケーリング則（Scaling Laws）」の強力な実証となり、のちのChatGPT（GPT-3.5）へと至る生成AIブームの原動力となりました。</p>",
+    "links": [
+      "https://openai.com/index/language-unsupervised/",
+      "https://openai.com/index/better-language-models/"
+    ],
+    "category": "A",
+    "categoryName": "生成モデル・システム",
+    "subcategory": "A-1",
+    "subcategoryName": "テキスト/LLM",
+    "tags": [
+      {
+        "type": "Org",
+        "value": "OpenAI"
+      },
+      {
+        "type": "Tech",
+        "value": "LLM"
+      },
+      {
+        "type": "Tech",
+        "value": "Zero-shot"
+      },
+      {
+        "type": "Domain",
+        "value": "CS"
+      },
+      {
+        "type": "Status",
+        "value": "2020年"
+      }
+    ],
+    "releaseDate": "2020-05-28",
+    "lastVerified": "2026-03-05"
   }
 ]
